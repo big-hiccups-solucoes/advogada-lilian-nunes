@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import HeroText from "../../models/hero-text.json"
 
 @Component({
   selector: 'app-hero',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-
+  title = HeroText.title
+  subtitle = HeroText.subtitle
 }
