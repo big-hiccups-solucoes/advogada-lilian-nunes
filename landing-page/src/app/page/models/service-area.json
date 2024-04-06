@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "text": "Golpe das Páginas Amarelas",
+            "color": "#FFD700 "
+        },
+        {
+            "text": "Suspensão CNH",
+            "color": "#1E90FF"
+        },
+        {
+            "text": "Revisão FGTS",
+            "color": "#32CD32"
+        },
+        {
+            "text": "Inventário extrajudicial",
+            "color": "#8A2BE2 "
+        },
+        {
+            "text": "Revisão de contrato",
+            "color": "#FF6347"
+        },
+        {
+            "text": "Golpe do PIX",
+            "color": "#FF4500"
+        }
+    ]
+}
