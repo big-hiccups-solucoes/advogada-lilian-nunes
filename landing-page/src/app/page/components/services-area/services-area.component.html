@@ -1,0 +1,15 @@
+<section class="hero pt-3">
+  <mat-card class="mx-3 mat-elevation-z3 rounded rounded-4">
+    <mat-card-header>
+      <h2 class="fw-bold opacity-75">{{ title }}</h2>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content class="my-4 d-flex flex-wrap">
+      <div *ngFor="let service of services">
+        <div class="border text-white m-1 p-2 rounded-3" [ngStyle]="{ 'background-color': service.color }">
+          {{ service.text }}
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</section>
