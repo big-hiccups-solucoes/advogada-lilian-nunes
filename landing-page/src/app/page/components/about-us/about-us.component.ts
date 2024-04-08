@@ -4,8 +4,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
-import { BtnWhatsappComponent } from '../../shared/btn-whatsapp/btn-whatsapp.component';
 import AboutUs from "../../models/about-us.json";
+import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
 
 @Component({
   selector: 'app-about-us',

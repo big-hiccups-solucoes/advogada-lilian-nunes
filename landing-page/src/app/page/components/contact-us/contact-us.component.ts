@@ -4,7 +4,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
-import { BtnWhatsappComponent } from '../../shared/btn-whatsapp/btn-whatsapp.component';
 import ContactUs from "../../models/contact-us.json";
 
 @Component({
@@ -13,7 +12,6 @@ import ContactUs from "../../models/contact-us.json";
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.scss',
   imports: [
-    BtnWhatsappComponent,
     MatCardModule,
     MatButtonModule,
     MatDividerModule,

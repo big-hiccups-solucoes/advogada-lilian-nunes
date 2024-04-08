@@ -4,7 +4,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 
-import { BtnWhatsappComponent } from '../../shared/btn-whatsapp/btn-whatsapp.component';
 import { CommonModule } from '@angular/common';
 
 const AboutServices = require('../../models/about-services.json');

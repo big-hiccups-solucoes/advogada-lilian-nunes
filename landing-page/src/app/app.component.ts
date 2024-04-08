@@ -7,6 +7,7 @@ import { ServicesAreaComponent } from "./page/components/services-area/services-
 import { AboutServicesComponent } from "./page/components/about-services/about-services.component";
 import { AboutUsComponent } from './page/components/about-us/about-us.component';
 import { ContactUsComponent } from './page/components/contact-us/contact-us.component';
+import { BtnWhatsappComponent } from './shared/components/btn-whatsapp/btn-whatsapp.component';
 
 @Component({
     selector: 'app-root',
@@ -20,7 +21,8 @@ import { ContactUsComponent } from './page/components/contact-us/contact-us.comp
         ServicesAreaComponent,
         AboutServicesComponent,
         AboutUsComponent,
-        ContactUsComponent
+        ContactUsComponent,
+        BtnWhatsappComponent
     ]
 })
 export class AppComponent {

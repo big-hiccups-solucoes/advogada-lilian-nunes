@@ -6,7 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 
 import HeroText from "../../models/hero-text.json"
-import { BtnWhatsappComponent } from '../../shared/btn-whatsapp/btn-whatsapp.component';
+import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
 
 @Component({
   selector: 'app-hero',

@@ -5,7 +5,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
 import Services from "../../models/service-area.json"
-import { BtnWhatsappComponent } from '../../shared/btn-whatsapp/btn-whatsapp.component';
 
 @Component({
   selector: 'app-services-area',
@@ -14,7 +13,6 @@ import { BtnWhatsappComponent } from '../../shared/btn-whatsapp/btn-whatsapp.com
   standalone: true,
   imports: [
     CommonModule, 
-    BtnWhatsappComponent,
     MatCardModule, 
     MatDividerModule]
   
