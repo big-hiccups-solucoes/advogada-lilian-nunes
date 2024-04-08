@@ -1,0 +1,22 @@
+
+<section class="about-services pt-3">
+    <mat-card class="mx-3 mat-elevation-z3 rounded rounded-4">
+      <mat-card-header>
+        <p class="text-justify ">{{ title }}</p>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content class="my-4 d-flex flex-wrap">
+        <div *ngFor="let service of services">
+          <div class="box mat-elevation-z1">
+            {{ service.text }}
+          </div>
+        </div>
+        
+      </mat-card-content>
+      <mat-divider></mat-divider>
+      <mat-card-footer class="my-3">
+        <app-btn-whatsapp></app-btn-whatsapp>
+      </mat-card-footer>
+    </mat-card>
+  </section>
+  

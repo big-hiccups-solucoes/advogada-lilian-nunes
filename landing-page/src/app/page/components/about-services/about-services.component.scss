@@ -1,0 +1,20 @@
+.about-services {
+    .text-justify {
+      text-align: justify;
+    }
+  
+    .mat-mdc-card-content {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .box {
+      color: black;
+      background-color: whitesmoke;
+      opacity: 75%;
+      width: auto;
+      height: 50px;
+      cursor: default;
+    }
+  }
+  
