@@ -6,6 +6,7 @@ import { MatDividerModule } from '@angular/material/divider';
 
 import AboutUs from "../../models/about-us.json";
 import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
+import { PageComponent } from '../../page.component';
 
 @Component({
   selector: 'app-about-us',
@@ -13,6 +14,7 @@ import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/bt
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss',
   imports: [
+    PageComponent,
     BtnWhatsappComponent,
     MatCardModule, 
     MatButtonModule,

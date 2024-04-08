@@ -5,6 +5,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
 import Services from "../../models/service-area.json"
+import { PageComponent } from '../../page.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-services-area',
@@ -12,12 +14,15 @@ import Services from "../../models/service-area.json"
   styleUrl: './services-area.component.scss',
   standalone: true,
   imports: [
+    PageComponent,
     CommonModule, 
     MatCardModule, 
     MatDividerModule]
   
 })
 export class ServicesAreaComponent implements OnInit {
+  constructor(private router: Router) {}
+  
   title!: string;
   services: Items[] = [];
 
@@ -29,6 +34,11 @@ export class ServicesAreaComponent implements OnInit {
     serviceData.items.forEach(item => {
       this.services.push(item);
     });
+  }
+
+  navigateToSelectedInfo(event: string) {
+    this.router.navigate(['/service-info', event])
+    
   }
 }
 

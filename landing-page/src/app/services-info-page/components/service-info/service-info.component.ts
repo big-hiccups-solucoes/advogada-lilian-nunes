@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-service-info',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
   templateUrl: './service-info.component.html',
   styleUrl: './service-info.component.scss'
 })
-export class ServiceInfoComponent {
+export class ServiceInfoComponent implements OnInit{
 
+  constructor(private route: ActivatedRoute) {}
+  serviceInfoStr: string = ''
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      this.serviceInfoStr = params.get('serviceType')!.toString();
+            
+    });
+  }
 }

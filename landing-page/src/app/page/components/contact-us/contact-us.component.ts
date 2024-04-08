@@ -5,6 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
 import ContactUs from "../../models/contact-us.json";
+import { PageComponent } from '../../page.component';
 
 @Component({
   selector: 'app-contact-us',
@@ -12,6 +13,7 @@ import ContactUs from "../../models/contact-us.json";
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.scss',
   imports: [
+    PageComponent,
     MatCardModule,
     MatButtonModule,
     MatDividerModule,

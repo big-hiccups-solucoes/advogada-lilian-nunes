@@ -7,6 +7,7 @@ import { MatDividerModule } from '@angular/material/divider';
 
 import HeroText from "../../models/hero-text.json"
 import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
+import { PageComponent } from '../../page.component';
 
 @Component({
   selector: 'app-hero',
@@ -14,6 +15,7 @@ import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/bt
   styleUrl: './hero.component.scss',
   standalone: true,
   imports: [
+    PageComponent,
     CommonModule, 
     BtnWhatsappComponent,
     MatCardModule, 

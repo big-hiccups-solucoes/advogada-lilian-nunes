@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 
 import { CommonModule } from '@angular/common';
+import { PageComponent } from '../../page.component';
 
 const AboutServices = require('../../models/about-services.json');
 
@@ -14,6 +15,7 @@ const AboutServices = require('../../models/about-services.json');
   templateUrl: './about-services.component.html',
   styleUrl: './about-services.component.scss',
   imports: [
+    PageComponent,
     CommonModule, 
     MatCardModule, 
     MatButtonModule,
