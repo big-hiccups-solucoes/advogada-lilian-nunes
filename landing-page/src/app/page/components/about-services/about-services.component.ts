@@ -19,7 +19,6 @@ const AboutServices = require('../../models/about-services.json');
     MatCardModule, 
     MatButtonModule,
     MatDividerModule,
-    BtnWhatsappComponent,
   ]
 })
 export class AboutServicesComponent {

@@ -1,0 +1,29 @@
+.about-us {
+    .mat-mdc-card-content {
+        display: flex;
+        align-items: center;
+    }
+    .image-area {
+        img {
+            width: 200px;
+            border-radius: 20px;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    .text-area {
+        margin-inline: 2rem !important;
+        .text-justify {
+            text-align: justify;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .mat-mdc-card-content {
+        display: block !important;
+
+    }
+  }

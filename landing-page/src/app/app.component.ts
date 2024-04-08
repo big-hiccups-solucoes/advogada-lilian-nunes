@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { HeroComponent } from "./page/components/hero/hero.component";
 import { ServicesAreaComponent } from "./page/components/services-area/services-area.component";
 import { AboutServicesComponent } from "./page/components/about-services/about-services.component";
+import { AboutUsComponent } from './page/components/about-us/about-us.component';
 
 @Component({
     selector: 'app-root',
@@ -16,7 +17,8 @@ import { AboutServicesComponent } from "./page/components/about-services/about-s
         RouterOutlet,
         HeroComponent,
         ServicesAreaComponent,
-        AboutServicesComponent
+        AboutServicesComponent,
+        AboutUsComponent
     ]
 })
 export class AppComponent {
