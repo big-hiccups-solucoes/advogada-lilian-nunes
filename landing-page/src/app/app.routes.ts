@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
-import { ServiceInfoComponent } from './services-info-page/components/service-info/service-info.component';
 import { NgModule } from '@angular/core';
 import { PageComponent } from './page/page.component';
+import { ServiceInfoComponent } from './services-info/components/service-info.component';
 
 export const routes: Routes = [
     { path: '', component: PageComponent },
