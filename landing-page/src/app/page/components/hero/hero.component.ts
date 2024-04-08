@@ -1,10 +1,25 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+
 import HeroText from "../../models/hero-text.json"
+import { BtnWhatsappComponent } from '../../shared/btn-whatsapp/btn-whatsapp.component';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss'
+  styleUrl: './hero.component.scss',
+  standalone: true,
+  imports: [
+    CommonModule, 
+    BtnWhatsappComponent,
+    MatCardModule, 
+    MatButtonModule,
+    MatDividerModule
+  ]
 })
 export class HeroComponent {
   title = HeroText.title

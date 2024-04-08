@@ -19,6 +19,6 @@ import { SobreServicoComponent } from './components/sobre-servico/sobre-servico.
     MatDividerModule,
     BtnWhatsappComponent
   ],
-  exports: [HeroComponent, ServicesAreaComponent, SobreServicoComponent],
+  exports: [CommonModule, HeroComponent, ServicesAreaComponent, SobreServicoComponent, ],
 })
 export class PageModule {}
