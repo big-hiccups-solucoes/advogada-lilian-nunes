@@ -20,13 +20,14 @@ import { BtnWhatsappComponent } from '../../shared/btn-whatsapp/btn-whatsapp.com
   
 })
 export class ServicesAreaComponent implements OnInit {
-  title: string = "Como posso Ajudar?";
+  title!: string;
   services: Items[] = [];
-  
-  
+
   ngOnInit(): void {
     const serviceData: ServiceData = Services;
-    
+    this.title = serviceData.title;
+    this.services = [];
+
     serviceData.items.forEach(item => {
       this.services.push(item);
     });
@@ -39,5 +40,6 @@ interface Items {
 }
 
 interface ServiceData {
+  title: string;
   items: Items[];
 }
