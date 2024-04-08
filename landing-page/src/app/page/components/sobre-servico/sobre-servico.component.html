@@ -7,11 +7,16 @@
       <mat-divider></mat-divider>
       <mat-card-content class="my-4 d-flex flex-wrap">
         <div *ngFor="let service of services">
-          <li class="m-1 ">
+          <div class="box mat-elevation-z1">
             {{ service.text }}
-          </li>
+          </div>
         </div>
+        
       </mat-card-content>
+      <mat-divider></mat-divider>
+      <mat-card-footer class="my-3">
+        <app-btn-whatsapp></app-btn-whatsapp>
+      </mat-card-footer>
     </mat-card>
   </section>
   
