@@ -1,0 +1,44 @@
+.contact-us {
+  .mat-mdc-card-header {
+    justify-content: center;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: whitesmoke;
+    opacity: 75%;
+    width: auto;
+    height: 100px;
+    cursor: default;
+
+    h4 {
+        margin: 0;
+        font-weight: 500;
+    }
+  }
+
+  .mat-mdc-card-content {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .image-area {
+    img {
+      width: 100px;
+      border-radius: 20px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+    .mat-mdc-card-content {
+        flex-direction: column;
+    }
+  }

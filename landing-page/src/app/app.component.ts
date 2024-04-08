@@ -6,6 +6,7 @@ import { HeroComponent } from "./page/components/hero/hero.component";
 import { ServicesAreaComponent } from "./page/components/services-area/services-area.component";
 import { AboutServicesComponent } from "./page/components/about-services/about-services.component";
 import { AboutUsComponent } from './page/components/about-us/about-us.component';
+import { ContactUsComponent } from './page/components/contact-us/contact-us.component';
 
 @Component({
     selector: 'app-root',
@@ -18,7 +19,8 @@ import { AboutUsComponent } from './page/components/about-us/about-us.component'
         HeroComponent,
         ServicesAreaComponent,
         AboutServicesComponent,
-        AboutUsComponent
+        AboutUsComponent,
+        ContactUsComponent
     ]
 })
 export class AppComponent {

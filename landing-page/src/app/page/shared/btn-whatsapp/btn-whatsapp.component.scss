@@ -1,6 +1,27 @@
 .btn-whatsapp {
-    svg {
-        margin-right: .5rem;
-        transform: translateY(-.1rem);
-    }
+  svg {
+    margin-right: 0.5rem;
+    transform: translateY(-0.1rem);
+  }
+}
+.btn-whatsapp button {
+    animation: skew-x-shaking 5s infinite, skew-y-shaking 5s infinite;
+}
+
+@keyframes skew-x-shaking {
+    0% { transform: skewX(-1deg); }
+    5% { transform: skewX(1deg); }
+    10% { transform: skewX(-1deg); }
+    15% { transform: skewX(1deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }
+}
+
+@keyframes skew-y-shaking {
+    0% { transform: skewY(-1deg); }
+    5% { transform: skewY(1deg); }
+    10% { transform: skewY(-1deg); }
+    15% { transform: skewY(1deg); }
+    20% { transform: skewY(0deg); }
+    100% { transform: skewY(0deg); }
 }
