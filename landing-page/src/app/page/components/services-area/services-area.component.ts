@@ -36,9 +36,8 @@ export class ServicesAreaComponent implements OnInit {
     });
   }
 
-  navigateToSelectedInfo(event: string) {
-    this.router.navigate(['/service-info', event])
-    
+  navigateToSelectedInfo(serviceType: string) {
+    this.router.navigate(['/service-info', serviceType])
   }
 }
 

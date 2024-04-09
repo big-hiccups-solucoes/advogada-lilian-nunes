@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterModule, RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ServicesAreaComponent } from '../../page/components/services-area/services-area.component';
 import { AboutServicesComponent } from '../../page/components/about-services/about-services.component';
@@ -27,13 +27,4 @@ import { CaseInfoComponent } from './case-info/case-info.component';
     BtnWhatsappComponent,
   ],
 })
-export class ServiceInfoComponent implements OnInit {
-  constructor(private route: ActivatedRoute) {}
-  serviceInfoStr: string = '';
-
-  ngOnInit(): void {
-    this.route.paramMap.subscribe((params) => {
-      this.serviceInfoStr = params.get('serviceType')!.toString();
-    });
-  }
-}
+export class ServiceInfoComponent {}

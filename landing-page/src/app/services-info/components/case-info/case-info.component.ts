@@ -8,7 +8,8 @@ import { MatCardModule } from '@angular/material/card';
 
 import { ServiceInfoComponent } from '../service-info.component';
 import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
-import CaseText from '../../models/services-info.json';
+import Case from '../../models/services-info.json';
+import { CaseItem } from '../../models/caseItem'
 
 @Component({
   selector: 'app-case-info',
@@ -34,10 +35,10 @@ export class CaseInfoComponent implements OnInit {
   title!: string;
   subtitle!: string;
   text!: string;
+  caseContents!: CaseItem;
 
   ngOnInit(): void {
-    this.scrollUp();
-    this.getRouteParams();
+    this.getContentsByRouteParams();
   }
 
   scrollUp(): void {
@@ -46,11 +47,25 @@ export class CaseInfoComponent implements OnInit {
     }
   }
 
-  getRouteParams(): void {
-    if (this.serviceInfoStr === '') {
-      this.route.paramMap.subscribe((params) => {
-        this.title = params.get('serviceType')!.toString();
+  getContentsByRouteParams(): void {
+    this.route.paramMap.subscribe(params => {
+      this.title = this.serviceInfoStr || params.get('serviceType')!.toString();
+      this.scrollUp();
+
+      Case.items.forEach((element: CaseItem) => {
+        if (element.title === this.title) {
+          this.caseContents = {
+            imagePath: element.imagePath,
+            paragraphs: element.paragraphs,
+            subtitle: element.subtitle,
+            title: element.title
+          };
+        }
       });
-    } else this.title = this.serviceInfoStr;
+    });
   }
 }
+
+
+
+

@@ -4,12 +4,15 @@
             <img class="logo mat-elevation-z3" src="../../../../assets/images/logo.png">
         </mat-card-header>
         <mat-card-content class="my-4 px-0">
-            <h1 class="fw-bold opacity-75">{{title}}</h1>
+            <h1 class="fw-bold opacity-75">{{caseContents!.title}}</h1>
             <mat-divider></mat-divider>
-            <p class="text-justify lh-base px-3  mt-3">{{subtitle}}</p>
+            <h3 class="text-justify lh-base px-3 mt-5">{{caseContents!.subtitle}}</h3>
+            <div *ngFor="let paragraph of caseContents!.paragraphs">
+                <p class="text-justify p-3">{{paragraph}}</p>
+            </div>
         </mat-card-content>
         <mat-card-footer>
-            <img class="pic mat-elevation-z3" src="../../../../assets/images/contract-signing.jpg">
+            <img class="pic mat-elevation-z3" [src]="caseContents!.imagePath">
             <div class="my-3">
                 <app-btn-whatsapp ></app-btn-whatsapp>
             </div>
