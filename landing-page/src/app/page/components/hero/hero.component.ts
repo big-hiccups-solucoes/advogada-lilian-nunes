@@ -5,9 +5,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 
-import HeroText from "../../models/hero-text.json"
-import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
 import { PageComponent } from '../../page.component';
+import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
+import HeroText from "../../models/hero-text.json"
 
 @Component({
   selector: 'app-hero',

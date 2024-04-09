@@ -7,14 +7,18 @@
     display: flex;
     justify-content: center;
   }
-}
 
-.box:hover {
-  animation: horizontal-shaking .5s ;
-  transition: transform 0.1s ease-in-out;
-}
+  .box {
+    font-weight: 600;
+  }
 
-@keyframes horizontal-shaking {
-  0% { transform: translateY(0) }
-  25% { transform: translateY(-5px) }
- }
+  .box:hover {
+    animation: horizontal-shaking .5s ;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  @keyframes horizontal-shaking {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(-5px) }
+   }
+}
