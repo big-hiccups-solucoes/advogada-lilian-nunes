@@ -49,20 +49,22 @@ export class CaseInfoComponent implements OnInit {
   }
 
   getContentsByRouteParams(): void {
-    this.route.paramMap.subscribe(params => {
-      this.title = this.serviceInfoStr || params.get('serviceType')!.toString();
-      this.scrollUp();
-
-      Case.items.forEach((element: CaseItem) => {
-        if (element.title === this.title) {
-          this.caseContents = {
-            imagePath: element.imagePath,
-            paragraphs: element.paragraphs,
-            subtitle: element.subtitle,
-            title: element.title
-          };
-        }
-      });
+    this.route.paramMap?.subscribe(params => {
+      if (params.has('serviceType')) {
+        this.title = this.serviceInfoStr || params.get('serviceType')!.toString();
+        this.scrollUp();
+  
+        Case.items.forEach((element: CaseItem) => {
+          if (element.title === this.title) {
+            this.caseContents = {
+              imagePath: element.imagePath,
+              paragraphs: element.paragraphs,
+              subtitle: element.subtitle,
+              title: element.title
+            };
+          }
+        });
+      }
     });
   }
 
