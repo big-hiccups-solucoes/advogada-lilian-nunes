@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Inject, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
 
 import { MatDividerModule } from '@angular/material/divider';
@@ -27,7 +27,8 @@ import { CaseItem } from '../../models/caseItem'
 export class CaseInfoComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
-    @Inject(DOCUMENT) private document: Document
+    @Inject(DOCUMENT) private document: Document,
+    private router: Router
   ) {}
 
   @Input() serviceInfoStr!: string;
@@ -63,6 +64,10 @@ export class CaseInfoComponent implements OnInit {
         }
       });
     });
+  }
+
+  navigateToLandingPage() {
+    this.router.navigate(['']);
   }
 }
 
