@@ -15,6 +15,7 @@
   }
 
   .box {
+    min-height: 170px;
     color: black;
     background-color: whitesmoke;
     opacity: 75%;
@@ -34,6 +35,9 @@
       align-items: center;
       margin: 1rem;
 
+      .box-subtitle {
+        max-width: 200px;
+      }
     }
   }
 }
