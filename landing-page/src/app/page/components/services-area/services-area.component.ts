@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PageComponent } from '../../page.component';
+import { Router } from '@angular/router';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
-import Services from "../../models/service-area.json"
-import { PageComponent } from '../../page.component';
-import { Router } from '@angular/router';
+import { ServiceAreaData } from '../../models/serviceData';
+import { Items } from '../../models/serviceData';
+import SERVICES from "../../models/json/service-area.json"
 
 @Component({
   selector: 'app-services-area',
@@ -27,7 +29,7 @@ export class ServicesAreaComponent implements OnInit {
   services: Items[] = [];
 
   ngOnInit(): void {
-    const serviceData: ServiceData = Services;
+    const serviceData: ServiceAreaData = SERVICES;
     this.title = serviceData.title;
     this.services = [];
 
@@ -41,12 +43,3 @@ export class ServicesAreaComponent implements OnInit {
   }
 }
 
-interface Items {
-  text: string;
-  color: string;
-}
-
-interface ServiceData {
-  title: string;
-  items: Items[];
-}

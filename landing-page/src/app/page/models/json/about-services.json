@@ -2,15 +2,19 @@
     "text": "Fusce pulvinar, mi et mollis lobortis, nisi magna rutrum nibh, id vestibulum erat erat eu sapien. Nunc at euismod neque. Suspendisse id tellus dui.",
     "items": [
         {
+            "id": 1,
             "text": "Atendimento Online"
         },
         {
+            "id": 2,
             "text": "Respostas Rápidas"
         },
         {
+            "id": 3,
             "text": "Ética e Transparância"
         },
         {
+            "id": 4,
             "text": "Acompanhamento Personalizado"
         }
     ]

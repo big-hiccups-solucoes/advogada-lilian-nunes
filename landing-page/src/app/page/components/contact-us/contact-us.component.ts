@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { PageComponent } from '../../page.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
-import ContactUs from "../../models/contact-us.json";
-import { PageComponent } from '../../page.component';
+import CONTACT_US from "../../models/json/contact-us.json";
 
 @Component({
   selector: 'app-contact-us',
@@ -25,8 +25,8 @@ export class ContactUsComponent implements OnInit {
   email!: string;
 
   ngOnInit(): void {
-    this.title = ContactUs.title;
-    this.email = ContactUs.email;
-    this.phone = ContactUs.phone;
+    this.title = CONTACT_US.title;
+    this.email = CONTACT_US.email;
+    this.phone = CONTACT_US.phone;
   }
 }

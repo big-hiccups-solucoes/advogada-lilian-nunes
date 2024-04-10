@@ -7,7 +7,7 @@ import { MatDividerModule } from '@angular/material/divider';
 
 import { PageComponent } from '../../page.component';
 import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
-import HeroText from "../../models/hero-text.json"
+import HERO_TEXT from "../../models/json/hero-text.json"
 
 @Component({
   selector: 'app-hero',
@@ -24,6 +24,6 @@ import HeroText from "../../models/hero-text.json"
   ]
 })
 export class HeroComponent {
-  title = HeroText.title
-  subtitle = HeroText.subtitle
+  title = HERO_TEXT.title
+  subtitle = HERO_TEXT.subtitle
 }

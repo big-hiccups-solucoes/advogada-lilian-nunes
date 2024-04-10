@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { PageComponent } from '../../page.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
-import AboutUs from "../../models/about-us.json";
 import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
-import { PageComponent } from '../../page.component';
+import ABOUT_US from "../../models/json/about-us.json";
 
 @Component({
   selector: 'app-about-us',
@@ -26,7 +26,7 @@ export class AboutUsComponent implements OnInit {
   subtitle!: string;
 
   ngOnInit(): void {
-    this.title = AboutUs.title;
-    this.subtitle = AboutUs.subtitle
+    this.title = ABOUT_US.title;
+    this.subtitle = ABOUT_US.subtitle
   }
 }
