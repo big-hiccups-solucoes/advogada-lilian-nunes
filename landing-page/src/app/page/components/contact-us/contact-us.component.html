@@ -6,16 +6,22 @@
     <mat-divider></mat-divider>
 
     <mat-card-content class="mt-2 px-0 d-flex">
+      <div class="qr-area">
+        <app-qr-code></app-qr-code>
+      </div>
+
       <div class="box mat-elevation-z1">
         <h4>E-mail: {{ email }}</h4>
         <h4>Telefone: {{ phone }}</h4>
       </div>
+
       <div class="image-area p-3">
         <img
           class="mat-elevation-z3"
           src="../../../../assets/images/mock-telemarketing-girl.jpeg"
         />
       </div>
+
     </mat-card-content>
   </mat-card>
 </section>

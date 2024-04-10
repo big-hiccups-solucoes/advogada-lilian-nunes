@@ -1,4 +1,12 @@
 .contact-us {
+  .qr-area {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+
   .mat-mdc-card-header {
     justify-content: center;
   }
@@ -28,8 +36,8 @@
   .image-area {
     img {
       width: 100px;
-      border-radius: 20px;
       height: auto;
+      border-radius: 20px;
       object-fit: cover;
     }
   }

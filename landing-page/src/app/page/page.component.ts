@@ -8,6 +8,7 @@ import { AboutServicesComponent } from './components/about-services/about-servic
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { BtnWhatsappComponent } from '../shared/components/btn-whatsapp/btn-whatsapp.component';
+import { QrCodeComponent } from '../shared/components/qr-code/qr-code.component';
 
 
 
@@ -25,7 +26,7 @@ import { BtnWhatsappComponent } from '../shared/components/btn-whatsapp/btn-what
         AboutServicesComponent,
         AboutUsComponent,
         ContactUsComponent,
-        BtnWhatsappComponent
+        BtnWhatsappComponent, 
     ]
 })
 export class PageComponent {

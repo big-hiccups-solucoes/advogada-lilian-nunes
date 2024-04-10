@@ -82,6 +82,7 @@ body {
 @media (max-width: 1240px) {
   .animated-gradient {
     padding-inline: 0rem !important;
+    background-size: 700% 700%;
     -webkit-animation: bgColorChange 4s ease infinite; 
     -moz-animation: bgColorChange 4s ease infinite; 
     animation: bgColorChange 4s ease infinite; 
