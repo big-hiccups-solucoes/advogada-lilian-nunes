@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
@@ -9,7 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ServiceInfoComponent } from '../service-info.component';
 import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
 import Case from '../../models/json/services-info.json';
-import { CaseItem } from '../../models/caseItem'
+import { CaseItem } from '../../models/caseItem';
 
 @Component({
   selector: 'app-case-info',
@@ -22,6 +23,14 @@ import { CaseItem } from '../../models/caseItem'
     MatCardModule,
     MatDividerModule,
     BtnWhatsappComponent,
+  ],
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('0.5s ease-out', style({ opacity: 1 })),
+      ]),
+    ]),
   ],
 })
 export class CaseInfoComponent implements OnInit {
@@ -37,6 +46,7 @@ export class CaseInfoComponent implements OnInit {
   subtitle!: string;
   text!: string;
   caseContents!: CaseItem;
+  isLoading: boolean = false;
 
   ngOnInit(): void {
     this.getContentsByRouteParams();
@@ -44,35 +54,34 @@ export class CaseInfoComponent implements OnInit {
 
   scrollUp(): void {
     if (this.document) {
-        this.document.documentElement.scrollTop = 0;
+      this.document.documentElement.scrollTop = 0;
     }
   }
 
   getContentsByRouteParams(): void {
-    this.route.paramMap?.subscribe(params => {
+    this.route.paramMap.subscribe((params) => {
       if (params.has('serviceType')) {
         this.title = this.serviceInfoStr || params.get('serviceType')!.toString();
         this.scrollUp();
-  
-        Case.items.forEach((element: CaseItem) => {
-          if (element.title === this.title) {
+        this.isLoading = true;
+        setTimeout(() => {
+          const foundItem = Case.items.find((element: CaseItem) => element.title === this.title);
+          if (foundItem) {
             this.caseContents = {
-              imagePath: element.imagePath,
-              paragraphs: element.paragraphs,
-              subtitle: element.subtitle,
-              title: element.title
+              imagePath: foundItem.imagePath,
+              paragraphs: foundItem.paragraphs,
+              subtitle: foundItem.subtitle,
+              title: foundItem.title,
             };
           }
-        });
+          this.isLoading = false;
+        }, 2000);
       }
     });
   }
+  
 
   navigateToLandingPage() {
     this.router.navigate(['']);
   }
 }
-
-
-
-
