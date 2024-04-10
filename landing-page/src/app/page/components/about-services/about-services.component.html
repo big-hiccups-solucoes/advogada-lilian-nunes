@@ -5,12 +5,22 @@
     </mat-card-header>
     <mat-divider></mat-divider>
 
-    <mat-card-content class="my-4 d-flex flex-wrap">
-      <p class="text-justify">{{ subtitle }}</p>
+    <mat-card-content class="my-4 d-flex ">
 
       <div *ngFor="let service of services">
         <div class="box mat-elevation-z1">
-          {{ service.text }}
+          <i class="bi bi-patch-check-fill"></i>
+          <div class="box-contents">
+
+            <h3 class="fw-bold mb-1">
+              {{ service.title }}
+            </h3>
+            
+            <h4 class="mb-1">
+              {{ service.subtitle }}
+            </h4>
+
+          </div>
         </div>
       </div>
     </mat-card-content>

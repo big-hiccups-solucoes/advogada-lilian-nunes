@@ -1,22 +1,26 @@
 {
     "title": "O Que Garantimos?",
-    "subtitle": "Fusce pulvinar, mi et mollis lobortis, nisi magna rutrum nibh, id vestibulum erat erat eu sapien. Nunc at euismod neque. Suspendisse id tellus dui.",
     "items": [
         {
             "id": 1,
-            "text": "Atendimento Online"
+            "title": "Atendimento Online",
+            "subtitle": "Plataformas seguras para comunicação e compartilhamento de documentos."
         },
         {
             "id": 2,
-            "text": "Respostas Rápidas"
+            "title": "Agilidade e comodidade",
+            "subtitle": "Resolva seus problemas jurídicos sem sair de casa."
         },
         {
             "id": 3,
-            "text": "Ética e Transparância"
+            "title": "Ética e Transparância",
+            "subtitle": "Fusce pulvinar, mi et mollis lobortis, nisi magna rutrum nibh,"
         },
         {
             "id": 4,
-            "text": "Acompanhamento Personalizado"
+            "title": "Acompanhamento Personalizado",
+            "subtitle": "Uma equipe dedicada para te auxiliar em cada etapa do processo."
         }
+       
     ]
 }

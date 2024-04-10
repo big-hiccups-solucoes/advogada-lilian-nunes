@@ -36,7 +36,6 @@ export class AboutServicesComponent {
   constructor(private elementRef: ElementRef) { }
   
   title: string = ABOUT_SERVICES.title;
-  subtitle: string = ABOUT_SERVICES.subtitle
   services: Items[] = [];
 
   ngOnInit(): void {

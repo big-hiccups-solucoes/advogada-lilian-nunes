@@ -10,6 +10,8 @@
   .mat-mdc-card-content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    
   }
 
   .box {
@@ -17,7 +19,21 @@
     background-color: whitesmoke;
     opacity: 75%;
     width: auto;
-    height: 50px;
+    height: auto;
+    padding: 0;
     cursor: default;
+
+    .bi-patch-check-fill  {
+      margin-left: 1rem;
+      font-size: 35px;
+    }
+    .box-contents {
+      display: flex;
+      flex-direction: column;
+      flex: auto;
+      align-items: center;
+      margin: 1rem;
+
+    }
   }
 }
