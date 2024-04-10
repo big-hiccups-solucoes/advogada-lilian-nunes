@@ -44,7 +44,9 @@ export class CaseInfoComponent implements OnInit {
 
   scrollUp(): void {
     if (this.document) {
-      this.document.documentElement.scrollTop = 0;
+      setTimeout(() => {
+        this.document.documentElement.scrollTop = 0;
+      }, 500);
     }
   }
 

@@ -24,12 +24,6 @@ export class BtnWhatsappComponent implements OnInit {
     this.getContentsByRouteParams();
   }
 
-  getContentsByRouteParams(): Observable<string> {
-    return this.route.paramMap.pipe(
-      map((params) => (params.get('serviceType') ?? '').toString())
-    );
-  }
-
   sendMessage(): void {
     this.getContentsByRouteParams().subscribe((serviceType) => {
       let phoneNumber = '+5562995530338';
@@ -46,5 +40,11 @@ export class BtnWhatsappComponent implements OnInit {
         }
       });
     });
+  }
+
+  getContentsByRouteParams(): Observable<string> {
+    return this.route.paramMap.pipe(
+      map((params) => (params.get('serviceType') ?? '').toString())
+    );
   }
 }
