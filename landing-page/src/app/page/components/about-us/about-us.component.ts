@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PageComponent } from '../../page.component';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -20,6 +21,14 @@ import ABOUT_US from "../../models/json/about-us.json";
     MatButtonModule,
     MatDividerModule
   ],
+  animations: [
+    trigger('slideInRight', [
+      transition(':enter', [
+        style({ transform: 'translateX(100%)', opacity: 0  }),
+        animate('0.5s 1.5s ease-out', style({ transform: 'translateX(0%)', opacity: 1 }))
+      ])
+    ])
+  ]
 })
 export class AboutUsComponent implements OnInit {
   title!: string;

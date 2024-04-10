@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PageComponent } from '../../page.component';
+import { trigger, style, animate, transition } from '@angular/animations';
+
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 
-import { PageComponent } from '../../page.component';
 import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
 import HERO_TEXT from "../../models/json/hero-text.json"
 
@@ -21,6 +23,14 @@ import HERO_TEXT from "../../models/json/hero-text.json"
     MatCardModule, 
     MatButtonModule,
     MatDividerModule
+  ],
+  animations: [
+    trigger('slideInRight', [
+      transition(':enter', [
+        style({ transform: 'translateX(100%)', opacity: 0  }),
+        animate('0.5s ease-out', style({ transform: 'translateX(0%)', opacity: 1 }))
+      ])
+    ])
   ]
 })
 export class HeroComponent {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PageComponent } from '../../page.component';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -18,6 +19,14 @@ import CONTACT_US from "../../models/json/contact-us.json";
     MatButtonModule,
     MatDividerModule,
   ],
+  animations: [
+    trigger('slideInRight', [
+      transition(':enter', [
+        style({ transform: 'translateX(100%)', opacity: 0  }),
+        animate('0.5s 2s ease-out', style({ transform: 'translateX(0%)', opacity: 1  }))
+      ])
+    ])
+  ]
 })
 export class ContactUsComponent implements OnInit {
   title!: string;
