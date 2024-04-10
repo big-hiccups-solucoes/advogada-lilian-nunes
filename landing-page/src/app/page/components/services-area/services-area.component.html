@@ -1,13 +1,13 @@
 <section class="services-area pt-5" [@slideInRight]>
   <mat-card class="mx-3 mat-elevation-z3 rounded rounded-4">
     <mat-card-header>
-      <h2 class="fw-bold opacity-75">{{ title }}</h2>
+      <h1 class="fw-bold opacity-75">{{ title }}</h1>
     </mat-card-header>
     <mat-divider></mat-divider>
     <mat-card-content class="my-4 d-flex flex-wrap">
-      <div *ngFor="let service of services" class="box-area">
+      <div *ngFor="let service of services">
         <div class="box mat-elevation-z1 " [ngStyle]="{ 'background-color': service.color }" (click)="navigateToSelectedInfo(service.text)">
-          {{ service.text }}
+          <h4>{{ service.text }}</h4>
         </div>
       </div>
     </mat-card-content>

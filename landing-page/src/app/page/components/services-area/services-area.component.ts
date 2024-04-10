@@ -40,7 +40,7 @@ export class ServicesAreaComponent implements OnInit {
   ngOnInit(): void {
     const serviceData: ServiceAreaData = SERVICES;
     this.title = serviceData.title;
-    this.services = [];
+    this.services = []; 
 
     serviceData.items.forEach(item => {
       this.services.push(item);

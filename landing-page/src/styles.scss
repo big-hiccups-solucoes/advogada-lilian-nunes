@@ -2,10 +2,19 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-typography p  {
+  font-family: "Lora", serif;
+}
+
+.mat-typography h1, .mat-typography h4 {
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .box {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;

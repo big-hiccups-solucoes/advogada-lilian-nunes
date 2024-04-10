@@ -4,12 +4,18 @@
   }
 
   .mat-mdc-card-content {
+
     display: flex;
     justify-content: center;
   }
 
   .box {
-    font-weight: 600;
+    min-width: 120px;
+    min-height: 120px;
+    
+    h4 {
+      font-weight: 600 !important;
+    }
   }
 
   .box:hover {

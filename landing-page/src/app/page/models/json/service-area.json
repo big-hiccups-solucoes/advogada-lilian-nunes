@@ -4,31 +4,37 @@
         {
             "id": 1,
             "text": "Golpe das Páginas Amarelas",
+            "imgUrl": "",
             "color": "#ffbb00"
         },
         {
             "id": 2,
             "text": "Suspensão CNH",
+            "imgUrl": "",
             "color": "#1E90FF"
         },
         {   
             "id": 3,
             "text": "Revisão FGTS",
+            "imgUrl": "",
             "color": "#32CD32"
         },
         {
             "id": 4,
             "text": "Inventário Extrajudicial",
+            "imgUrl": "",
             "color": "#8A2BE2 "
         },
         {   
             "id": 5,
             "text": "Revisão de Contrato",
+            "imgUrl": "",
             "color": "#FF6347"
         },
         {   
             "id": 5,
             "text": "Golpe do PIX",
+            "imgUrl": "",
             "color": "#FF4500"
         }
     ]
