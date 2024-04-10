@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import Case from '../../../services-info/models/services-info.json';
+import Case from '../../../services-info/models/json/services-info.json';
 import { CaseItem } from '../../../services-info/models/caseItem';
 import { WhatsappService } from '../../../services/whatsapp.service';
 import { Observable, map } from 'rxjs';

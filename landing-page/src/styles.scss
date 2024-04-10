@@ -1,8 +1,6 @@
 html,
 body {
   height: 100%;
-}
-body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
@@ -39,7 +37,7 @@ body {
 }
 
 .animated-gradient {
-  padding-inline: 0rem;
+  padding-inline: 10rem;
   width: 100%;
   background: linear-gradient(222deg, #000438, #490000);
   background-size: 600% 600%;
@@ -77,6 +75,49 @@ body {
     }
     100% {
       background-position: 0% 50%;
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .animated-gradient {
+    padding-inline: 0rem !important;
+    -webkit-animation: bgColorChange 4s ease infinite; 
+    -moz-animation: bgColorChange 4s ease infinite; 
+    animation: bgColorChange 4s ease infinite; 
+  }
+
+  @-webkit-keyframes bgColorChange {
+    0% {
+      background-position: 0% 30%;
+    }
+    50% {
+      background-position: 0% 30%;
+    }
+    100% {
+      background-position: 0% 30%;
+    }
+  }
+  @-moz-keyframes bgColorChange {
+    0% {
+      background-position: 0% 30%;
+    }
+    50% {
+      background-position: 0% 30%;
+    }
+    100% {
+      background-position: 0% 30%;
+    }
+  }
+  @keyframes bgColorChange {
+    0% {
+      background-position: 0% 30%;
+    }
+    50% {
+      background-position: 100% 30%;
+    }
+    100% {
+      background-position: 0% 30%;
     }
   }
 }

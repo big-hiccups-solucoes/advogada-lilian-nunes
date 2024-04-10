@@ -8,7 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 
 import { ServiceInfoComponent } from '../service-info.component';
 import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
-import Case from '../../models/services-info.json';
+import Case from '../../models/json/services-info.json';
 import { CaseItem } from '../../models/caseItem'
 
 @Component({
