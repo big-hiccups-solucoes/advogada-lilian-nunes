@@ -35,7 +35,8 @@ import ABOUT_SERVICES from '../../models/json/about-services.json'
 export class AboutServicesComponent {
   constructor(private elementRef: ElementRef) { }
   
-  title: string = ABOUT_SERVICES.text;
+  title: string = ABOUT_SERVICES.title;
+  subtitle: string = ABOUT_SERVICES.subtitle
   services: Items[] = [];
 
   ngOnInit(): void {

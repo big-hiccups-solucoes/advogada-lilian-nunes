@@ -1,10 +1,13 @@
 <section class="about-services pt-5" [@slideInRight]>
   <mat-card class="mx-3 mat-elevation-z3 rounded rounded-4">
     <mat-card-header>
-      <p class="text-justify">{{ title }}</p>
+      <h2 class="fw-bold opacity-75">{{ title }}</h2>
     </mat-card-header>
     <mat-divider></mat-divider>
+
     <mat-card-content class="my-4 d-flex flex-wrap">
+      <p class="text-justify">{{ subtitle }}</p>
+
       <div *ngFor="let service of services">
         <div class="box mat-elevation-z1">
           {{ service.text }}

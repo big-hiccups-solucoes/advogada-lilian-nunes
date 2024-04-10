@@ -1,5 +1,6 @@
 export interface AboutServices {
-  text: string;
+  title: string;
+  subtitle: string;
   items: Items[];
 }
 
