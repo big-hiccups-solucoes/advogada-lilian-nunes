@@ -15,7 +15,10 @@
   }
 
   .box {
+    display: flex;
+    align-items: flex-start;
     min-height: 170px;
+    min-width: 280px;
     color: black;
     background-color: whitesmoke;
     opacity: 75%;
@@ -25,18 +28,19 @@
     cursor: default;
 
     .bi-patch-check-fill  {
-      margin-left: 1rem;
+      margin: 1rem 0 0 1rem;
       font-size: 35px;
     }
     .box-contents {
       display: flex;
       flex-direction: column;
       flex: auto;
-      align-items: center;
+      align-items: flex-start;
       margin: 1rem;
 
-      .box-subtitle {
+      .box-subtitle, .box-title {
         max-width: 200px;
+        text-align: start;
       }
     }
   }
