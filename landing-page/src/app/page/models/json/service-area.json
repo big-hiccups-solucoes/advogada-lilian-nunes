@@ -5,14 +5,14 @@
             "id": 1,
             "text": "Divórcio Online",
             "imgUrl": "../../../../assets/images/thumbnails/divorce-thumbnail.png",
-            "color": "#17a2b8"
+            "color": "#6c757d"
         },
 
         {
             "id": 2,
             "text": "Golpe do PIX",
             "imgUrl": "../../../../assets/images/thumbnails/golpe-pix-thumbnail.png",
-            "color": "#343a40"
+            "color": "#17a2b8"
         },
         {
             "id": 3,
