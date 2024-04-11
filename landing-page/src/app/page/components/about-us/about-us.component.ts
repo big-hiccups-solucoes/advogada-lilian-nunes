@@ -8,6 +8,7 @@ import { MatDividerModule } from '@angular/material/divider';
 
 import { BtnWhatsappComponent } from '../../../shared/components/btn-whatsapp/btn-whatsapp.component';
 import ABOUT_US from "../../models/json/about-us.json";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-about-us',
@@ -15,6 +16,7 @@ import ABOUT_US from "../../models/json/about-us.json";
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss',
   imports: [
+    CommonModule,
     PageComponent,
     BtnWhatsappComponent,
     MatCardModule, 
@@ -33,9 +35,13 @@ import ABOUT_US from "../../models/json/about-us.json";
 export class AboutUsComponent implements OnInit {
   title!: string;
   subtitle!: string;
+  paragraphs: string[] = [];
 
   ngOnInit(): void {
     this.title = ABOUT_US.title;
     this.subtitle = ABOUT_US.subtitle
+    ABOUT_US.paragraphs.forEach(element => {
+      this.paragraphs.push(element);
+    });
   }
 }

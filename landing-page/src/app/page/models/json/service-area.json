@@ -3,39 +3,28 @@
     "items": [
         {
             "id": 1,
-            "text": "Golpe das Páginas Amarelas",
-            "imgUrl": "",
-            "color": "#ffbb00"
+            "text": "Divórcio Online",
+            "imgUrl": "../../../../assets/images/service-images/divorcio-online-thumbnail.png",
+            "color": "#17a2b8"
         },
         {
             "id": 2,
-            "text": "Suspensão CNH",
-            "imgUrl": "",
-            "color": "#1E90FF"
-        },
-        {   
-            "id": 3,
-            "text": "Revisão FGTS",
-            "imgUrl": "",
-            "color": "#32CD32"
+            "text": "Inventário",
+            "imgUrl": "../../../../assets/images/service-images/inventario-thumbnail.png",
+            "color": "#6f42c1"
         },
         {
-            "id": 4,
-            "text": "Inventário Extrajudicial",
-            "imgUrl": "",
-            "color": "#8A2BE2 "
+            "id": 3,
+            "text": "Regularização de Imóveis",
+            "imgUrl": "../../../../assets/images/service-images/inventario-thumbnail.png",
+            "color": "#20c997"
         },
-        {   
-            "id": 5,
-            "text": "Revisão de Contrato",
-            "imgUrl": "",
-            "color": "#FF6347"
-        },
-        {   
-            "id": 5,
-            "text": "Golpe do PIX",
-            "imgUrl": "",
-            "color": "#FF4500"
+        {
+            "id": 3,
+            "text": "Direito do Consumidor",
+            "imgUrl": "../../../../assets/images/service-images/inventario-thumbnail.png",
+            "color": "#20c997"
         }
+        
     ]
 }

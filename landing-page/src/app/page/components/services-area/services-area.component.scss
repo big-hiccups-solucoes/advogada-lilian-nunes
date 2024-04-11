@@ -4,17 +4,31 @@
   }
 
   .mat-mdc-card-content {
-
     display: flex;
     justify-content: center;
   }
 
   .box {
     min-width: 120px;
-    min-height: 120px;
-    
-    h4 {
-      font-weight: 600 !important;
+    min-height: 180px;
+    padding: 0.5rem;
+    position: relative;
+    align-items: flex-start;
+   
+    .img-area {
+      img {
+        padding: .3rem;
+        position: absolute;
+        border-radius: 16px;
+        height: 100px;
+        bottom: 0;
+        left: 0;
+      }
+
+      h4 {
+        margin-top: 1rem;
+        font-weight: 600 !important;
+      }
     }
   }
 

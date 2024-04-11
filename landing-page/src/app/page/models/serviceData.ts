@@ -6,5 +6,6 @@ export interface Items {
     id: number;
     text: string;
     color: string;
+    imgUrl: string;
   }
   

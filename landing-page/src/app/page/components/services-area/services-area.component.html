@@ -6,8 +6,16 @@
     <mat-divider></mat-divider>
     <mat-card-content class="my-4 d-flex flex-wrap">
       <div *ngFor="let service of services">
-        <div class="box mat-elevation-z1 " [ngStyle]="{ 'background-color': service.color }" (click)="navigateToSelectedInfo(service.text)">
-          <h4>{{ service.text }}</h4>
+        <div
+          class="box mat-elevation-z1"
+          [ngStyle]="{ 'background-color': service.color }"
+          (click)="navigateToSelectedInfo(service.text)">
+          <div class="d-flex flex-column">
+            <div class="text-area"><h4>{{ service.text }}</h4></div>
+            <div class="img-area">
+              <img class="w-100 mat-elevation-z1" [src]="service.imgUrl" />
+            </div>
+          </div>
         </div>
       </div>
     </mat-card-content>

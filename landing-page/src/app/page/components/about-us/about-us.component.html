@@ -11,7 +11,13 @@
       </div>
       <div class="text-area">
         <h1 class="fw-bold opacity-75 text-start ml-1">{{ title }} </h1>
-        <p class="text-justify lh-base  mt-3">{{ subtitle }}</p>
+        <h4 class="text-justify lh-base  mt-3">{{ subtitle }}</h4>
+
+        <div *ngFor="let paragraph of paragraphs">
+          <p class="text-justify">{{paragraph}}</p>
+        </div>
+
+
       </div>
     </mat-card-content>
     <mat-card-footer>

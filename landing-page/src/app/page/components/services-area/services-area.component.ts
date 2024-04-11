@@ -41,6 +41,7 @@ export class ServicesAreaComponent implements OnInit {
     const serviceData: ServiceAreaData = SERVICES;
     this.title = serviceData.title;
     this.services = []; 
+    
 
     serviceData.items.forEach(item => {
       this.services.push(item);
