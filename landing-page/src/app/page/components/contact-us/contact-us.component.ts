@@ -34,10 +34,12 @@ export class ContactUsComponent implements OnInit {
   title!: string;
   phone!: string;
   email!: string;
+  instagram!: string;
 
   ngOnInit(): void {
     this.title = CONTACT_US.title;
     this.email = CONTACT_US.email;
     this.phone = CONTACT_US.phone;
+    this.instagram = CONTACT_US.instagram
   }
 }

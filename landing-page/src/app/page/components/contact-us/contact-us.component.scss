@@ -18,11 +18,15 @@
     background-color: whitesmoke;
     opacity: 75%;
     width: auto;
-    height: 100px;
+    height: auto;
     cursor: default;
 
     h4 {
         margin: 0;
+    }
+
+    .bi  {
+      margin-right: 1rem;
     }
   }
 
