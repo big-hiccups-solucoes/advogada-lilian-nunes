@@ -26,23 +26,8 @@
         "Não perca o prazo, o inventário deve ser feito no prazo de 60 dias após o óbito, sujeito a multa, juros e correção sobre o valor do imposto a ser pago."
       ]
     },
-    {
+        {
       "id": 3,
-      "imagePath": "../../../../assets/images/banners/scam-banner.png",
-      "title": "Golpes Virtuais",
-      "subtitle": "Você já foi vítima de golpes virtuais?",
-      "whatsappMsg": "Olá, gostaria de algumas informações sobre Golpes Virtuais, poderia me ajudar?",
-      "paragraphs": [
-        "Na era digital, a segurança precisa ser prioridade. Golpes como phishing, malware, estelionato online e sequestro de dados se multiplicam, causando enormes transtornos e prejuízos financeiros.",
-
-        "Com o LN Advogados, você tem a proteção completa que precisa, contamos  com uma equipe de advogados especializados  prontos para lhe atender com discrição, seriedade e agilidade de forma 100% online em todo Brasil.Atendimento online para todo o Brasil: Advogados especializados prontos para te atender de onde você estiver, com praticidade e agilidade.",
-
-        "Como podemos te ajudar? Clonagem de Cartão de Crédito? Empréstimos Indevidos? Fraudes Bancárias? Golpe do Boleto Falso? Golpe do PIX? Novo Golpe das “Paginas Amarelas”? Negativação Indevida? Golpes em compras online em sites de varejo?"
-      ]
-    },
-
-    {
-      "id": 4,
       "imagePath": "../../../../assets/images/banners/adjudicacao-banner.png",
       "title": "Adjudicação Compulsória",
       "subtitle": "Enfrentando problemas para regularizar a situação do seu imóvel? Garanta seu Direito à Propriedade: Adjudicação Compulsória com o LN Advogados. Imóvel em seu nome sem complicações!",
@@ -60,7 +45,7 @@
     },
 
     {
-      "id": 5,
+      "id": 4,
       "imagePath": "../../../../assets/images/banners/usucapiao-banner.png",
       "title": "Usucapião",
       "subtitle": "Usucapião de Bens Imóveis e Móveis. Descubra Como Usucapião Pode Ser a Solução Para você ",
@@ -75,7 +60,7 @@
     },
 
     {
-      "id": 6,
+      "id": 5,
       "imagePath": "../../../../assets/images/banners/golpe-lista-banner.png",
       "title": "Golpe da Lista Telefônica",
       "subtitle": "Usucapião de Bens Imóveis e Móveis. Descubra Como Usucapião Pode Ser a Solução Para você ",

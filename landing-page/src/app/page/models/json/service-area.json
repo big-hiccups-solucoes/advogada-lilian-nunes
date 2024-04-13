@@ -5,44 +5,38 @@
             "id": 1,
             "text": "Divórcio Online",
             "imgUrl": "../../../../assets/images/thumbnails/divorce-thumbnail.png",
-            "color": "#6c757d"
+            "color": "#854628"
         },
 
         {
             "id": 2,
             "text": "Golpe do PIX",
             "imgUrl": "../../../../assets/images/thumbnails/golpe-pix-thumbnail.png",
-            "color": "#17a2b8"
+            "color": "#85282f"
         },
         {
             "id": 3,
-            "text": "Golpes Virtuais",
-            "imgUrl": "../../../../assets/images/thumbnails/scam-thumbnail.png",
-            "color": "#dc3545"
+            "text": "Adjudicação Compulsória",
+            "imgUrl": "../../../../assets/images/thumbnails/adjudicacao-thumbnail.png",
+            "color": "#d9863d"
         },
         {
             "id": 4,
-            "text": "Adjudicação Compulsória",
-            "imgUrl": "../../../../assets/images/thumbnails/adjudicacao-thumbnail.png",
-            "color": "#20c997"
+            "text": "Inventário",
+            "imgUrl": "../../../../assets/images/thumbnails/inventario-thumbnail.png",
+            "color": "#855928"
         },
         {
             "id": 5,
-            "text": "Inventário",
-            "imgUrl": "../../../../assets/images/thumbnails/inventario-thumbnail.png",
-            "color": "#6f42c1"
+            "text": "Usucapião",
+            "imgUrl": "../../../../assets/images/thumbnails/usucapiao-thumbnail.png",
+            "color": "#590202"
         },
         {
             "id": 6,
-            "text": "Usucapião",
-            "imgUrl": "../../../../assets/images/thumbnails/usucapiao-thumbnail.png",
-            "color": "#28a745"
-        },
-        {
-            "id": 7,
             "text": "Golpe da Lista Telefônica",
             "imgUrl": "../../../../assets/images/thumbnails/golpe-lista-thumbnail.png",
-            "color": "#343a40"
+            "color": "#4b3621"
         }
     ]
 }
