@@ -28,7 +28,8 @@ body {
 }
 
 .logo {
-  width: 150px;
+  width: 100%;
+  margin-bottom: 3rem;
   height: auto;
   border-radius: 4px;
   cursor: pointer;
@@ -46,7 +47,7 @@ body {
 }
 
 .animated-gradient {
-  padding-inline: 10rem;
+  padding-inline: 15rem;
   width: 100%;
   background: linear-gradient(222deg, #4b3621, #2d2d23);
   background-size: 600% 600%;
