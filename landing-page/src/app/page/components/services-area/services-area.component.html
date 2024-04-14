@@ -1,0 +1,23 @@
+<section class="services-area pt-5" [@slideInRight]>
+  <mat-card class="mx-3 mat-elevation-z3 rounded rounded-4">
+    <mat-card-header>
+      <h1 class="fw-bold opacity-75">{{ title }}</h1>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content class="my-4 d-flex flex-wrap">
+      <div *ngFor="let service of services">
+        <div
+          class="box mat-elevation-z4"
+          [ngStyle]="{ 'background-color': service.color }"
+          (click)="navigateToSelectedInfo(service.text)">
+          <div class="d-flex flex-column">
+            <div class="text-area"><h4>{{ service.text }}</h4></div>
+            <div class="img-area">
+              <img class="w-100 mat-elevation-z1" [src]="service.imgUrl" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</section>

@@ -1,0 +1,26 @@
+{
+    "title": "O Que Garantimos?",
+    "items": [
+        {
+            "id": 1,
+            "title": "Atendimento Online",
+            "subtitle": "Plataformas seguras para comunicação e compartilhamento de documentos."
+        },
+        {
+            "id": 2,
+            "title": "Agilidade e comodidade",
+            "subtitle": "Resolva seus problemas jurídicos sem sair de casa."
+        },
+        {
+            "id": 3,
+            "title": "Ética e Transparância",
+            "subtitle": "Fusce pulvinar, mi et mollis lobortis, nisi magna rutrum nibh,"
+        },
+        {
+            "id": 4,
+            "title": "Acompanhamento Personalizado",
+            "subtitle": "Uma equipe dedicada para te auxiliar em cada etapa do processo."
+        }
+       
+    ]
+}

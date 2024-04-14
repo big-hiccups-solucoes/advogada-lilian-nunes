@@ -1,0 +1,54 @@
+.services-area {
+  .mat-mdc-card-header {
+    justify-content: center;
+  }
+
+  .mat-mdc-card-content {
+    display: flex;
+    justify-content: center;
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+
+  .mat-mdc-card-content::-webkit-scrollbar {
+    display: none;
+}
+
+  .box {
+    min-width: 120px;
+    min-height: 180px;
+    padding: 0.5rem;
+    position: relative;
+    align-items: flex-start;
+   
+    .img-area {
+      img {
+        padding: .3rem;
+        position: absolute;
+        border-radius: 12px;
+        height: 100px;
+        bottom: 0;
+        left: 0;
+      }
+
+      h4 {
+        margin-top: 1rem;
+        font-weight: 600 !important;
+      }
+    }
+  }
+
+  .box:hover {
+    animation: horizontal-shaking 0.5s;
+    transition: transform 0.1s ease-in-out;
+  }
+
+  @keyframes horizontal-shaking {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-5px);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<section class="about-services pt-5" [@slideInRight]>
+  <mat-card class="mx-3 mat-elevation-z3 rounded rounded-4">
+    <mat-card-header>
+      <h1 class="fw-bold opacity-75">{{ title }}</h1>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+
+    <mat-card-content class="my-4 d-flex ">
+
+      <div *ngFor="let service of services">
+        <div class="box mat-elevation-z1">
+          <i class="bi bi-patch-check-fill"></i>
+          <div class="box-contents">
+
+            <h3 class="fw-bold mb-1 box-title">
+              {{ service.title }}
+            </h3>
+            
+            <h4 class="mb-1 d-flex box-subtitle">
+              {{ service.subtitle }}
+            </h4>
+
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</section>

@@ -1,0 +1,28 @@
+<section class="contact-us pt-5 pb-5" [@slideInRight]>
+  <mat-card class="mx-3 mat-elevation-z3 rounded-4">
+    <mat-card-header>
+      <h1 class="fw-bold opacity-75">{{ title }}</h1>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+
+    <mat-card-content class="mt-2 px-0 d-flex">
+      <div class="qr-area">
+        <app-qr-code></app-qr-code>
+      </div>
+
+      <div class="box mat-elevation-z1">
+        <div class="d-flex align-items-center "><i class="bi bi-envelope"></i> <h4> {{ email }}</h4></div>
+        <div class="d-flex align-items-center"><i class="bi bi-telephone mr-2"></i> <h4> {{ phone }}</h4></div>
+        <div class="d-flex align-items-center"><i class="bi bi-instagram mr-2"></i> <h4>{{instagram}}</h4></div>
+      </div>
+
+      <div class="image-area p-3">
+        <img
+          class="mat-elevation-z3"
+          src="../../../../assets/images/mock-telemarketing-girl.jpeg"
+        />
+      </div>
+
+    </mat-card-content>
+  </mat-card>
+</section>
