@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:landing-page": "node dist/landing-page/server/server.mjs"
+    "serve:ssr:landing-page": "node dist/landing-page/server/server.mjs",
+    "deploy:ghdocs": "ng build --configuration=production --output-path=docs --base-href /ln.advogados/landing-page"
+
   },
   "private": true,
   "dependencies": {
