@@ -2,7 +2,7 @@
   "items": [
     {
       "id": 1,
-      "imagePath": "../../../../assets/images/banners/divorce-banner.png",
+      "imagePath": "assets/images/banners/divorce-banner.png",
       "title": "Divórcio Online",
       "subtitle": "Conheça o Divórcio Consensual - Online",
       "whatsappMsg": "Olá, gostaria de algumas informações sobre Divórcio Online, poderia me ajudar?",
@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "imagePath": "../../../../assets/images/banners/inventario-banner.png",
+      "imagePath": "assets/images/banners/inventario-banner.png",
       "title": "Inventário",
       "subtitle": "Somos Especialistas em Inventário Judicial e Extrajudicial, Partilha de Bens, Testamentos.",
       "whatsappMsg": "Olá, gostaria de algumas informações sobre Inventário, poderia me ajudar?",
@@ -28,7 +28,7 @@
     },
         {
       "id": 3,
-      "imagePath": "../../../../assets/images/banners/adjudicacao-banner.png",
+      "imagePath": "assets/images/banners/adjudicacao-banner.png",
       "title": "Adjudicação Compulsória",
       "subtitle": "Enfrentando problemas para regularizar a situação do seu imóvel? Garanta seu Direito à Propriedade: Adjudicação Compulsória com o LN Advogados. Imóvel em seu nome sem complicações!",
       "whatsappMsg": "Olá, gostaria de algumas informações sobre Adjudicação Compulsória, poderia me ajudar?",
@@ -46,7 +46,7 @@
 
     {
       "id": 4,
-      "imagePath": "../../../../assets/images/banners/usucapiao-banner.png",
+      "imagePath": "assets/images/banners/usucapiao-banner.png",
       "title": "Usucapião",
       "subtitle": "Usucapião de Bens Imóveis e Móveis. Descubra Como Usucapião Pode Ser a Solução Para você ",
       "whatsappMsg": "Olá, gostaria de algumas informações sobre Usucapião de Bens Imóveis e Móveis, poderia me ajudar?",
@@ -61,7 +61,7 @@
 
     {
       "id": 5,
-      "imagePath": "../../../../assets/images/banners/golpe-lista-banner.png",
+      "imagePath": "assets/images/banners/golpe-lista-banner.png",
       "title": "Golpe da Lista Telefônica",
       "subtitle": "Usucapião de Bens Imóveis e Móveis. Descubra Como Usucapião Pode Ser a Solução Para você ",
       "whatsappMsg": "Olá, gostaria de algumas informações sobre Golpe da Lista Telefônica, poderia me ajudar?",
@@ -84,7 +84,7 @@
 
     {
       "id": 6,
-      "imagePath": "../../../../assets/images/banners/golpe-pix-banner.png",
+      "imagePath": "assets/images/banners/golpe-pix-banner.png",
       "title": "Golpe do PIX",
       "subtitle": "Golpe do Pix? Não Seja Vítima! Recupere Seu Dinheiro Agora!",
       "whatsappMsg": "Olá, gostaria de algumas informações sobre Golpe do PIX, poderia me ajudar?",
