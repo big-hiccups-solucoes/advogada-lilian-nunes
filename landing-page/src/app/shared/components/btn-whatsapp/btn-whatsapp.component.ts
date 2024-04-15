@@ -26,7 +26,7 @@ export class BtnWhatsappComponent implements OnInit {
 
   sendMessage(): void {
     this.getContentsByRouteParams().subscribe((serviceType) => {
-      let phoneNumber = '+5562995530338';
+      let phoneNumber = '+5562982288200';
       let messageWithNoType =
         'Olá! Gostaria de algumas informações, poderia me ajudar?';
 
